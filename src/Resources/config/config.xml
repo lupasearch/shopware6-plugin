@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Search configuration</title>
+
+        <input-field type="text">
+            <name>javascriptPluginUrl</name>
+            <label>JavaScript plugin URL</label>
+            <helpText>The URL of the JavaScript file to be included on every page.</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>productIndexId</name>
+            <label>Product Index ID</label>
+            <helpText>The UUID of the LupaSearch products index.</helpText>
+            <placeholder><![CDATA[xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx]]></placeholder>
+        </input-field>
+    </card>
+
+</config>

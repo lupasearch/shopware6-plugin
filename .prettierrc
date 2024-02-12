@@ -1,0 +1,7 @@
+{
+  "phpVersion": "8.0",
+  "singleQuote": true,
+  "trailingComma": "none",
+  "braceStyle": "psr-2",
+  "printWidth": 120
+}
