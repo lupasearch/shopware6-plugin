@@ -1,0 +1,22 @@
+{
+  "name": "lupa-search/lupa-search-connector",
+  "description": "Help your website visitors turn into buyers. LupaSearch delivers accurate search results that boost your business sales.",
+  "type": "shopware-platform-plugin",
+  "version": "0.1.0",
+  "license": "MIT",
+  "require": {
+    "shopware/core": "6.5.*"
+  },
+  "extra": {
+    "shopware-plugin-class": "LupaSearch\\LupaSearchConnector\\LupaSearchConnector",
+    "plugin-icon": "src/Resources/images/plugin-icon.png",
+    "label": {
+      "en-GB": "Better ecommerce search by LupaSearch"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "LupaSearch\\LupaSearchConnector\\": "src/"
+    }
+  }
+}
