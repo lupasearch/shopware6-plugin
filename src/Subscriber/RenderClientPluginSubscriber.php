@@ -23,10 +23,11 @@ class RenderClientPluginSubscriber implements EventSubscriberInterface
 
     public function onStorefrontRender(StorefrontRenderEvent $event): void
     {
-        $javascriptFileUrl = $this->systemConfigService->get('LupaSearchConnector.config.javascriptPluginUrl');
+        $isWidgetEnabled = $this->systemConfigService->get('LupaSearchConnector.config.widgetEnabled');
+        $uiPluginConfigurationKey = $this->systemConfigService->get('LupaSearchConnector.config.uiPluginConfigurationKey');
 
-        if ($javascriptFileUrl) {
-            $event->setParameter('lupaJavascriptFileUrl', $javascriptFileUrl);
+        if ($isWidgetEnabled && $uiPluginConfigurationKey) {
+            $event->setParameter('uiPluginConfigurationKey', $uiPluginConfigurationKey);
         }
     }
 }

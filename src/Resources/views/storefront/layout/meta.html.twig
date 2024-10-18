@@ -3,7 +3,10 @@
 {% block layout_head_javascript_hmr_mode %}
     {{ parent() }}
 
-    {% if lupaJavascriptFileUrl %}
-        <script type="text/javascript" src="https://cdn.lupasearch.com/client/lupasearch-latest.min.js"></script>
+    {% if uiPluginConfigurationKey %}
+        <!-- start of LupaSearch script -->
+        <script src="https://cdn.lupasearch.com/client/lupasearch-latest.min.js"></script>
+        <script>lupaSearch.init("{{ uiPluginConfigurationKey }}", {});</script>
+        <!-- end of LupaSearch script -->
     {% endif %}
 {% endblock %}

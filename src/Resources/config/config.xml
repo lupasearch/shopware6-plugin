@@ -6,10 +6,17 @@
     <card>
         <title>Search configuration</title>
 
+        <input-field type="bool">
+            <name>widgetEnabled</name>
+            <label>Enable widget</label>
+            <helpText>Use this widget in live mode.</helpText>
+        </input-field>
+
         <input-field type="text">
-            <name>javascriptPluginUrl</name>
-            <label>JavaScript plugin URL</label>
-            <helpText>The URL of the JavaScript file to be included on every page.</helpText>
+            <name>uiPluginConfigurationKey</name>
+            <label>UI Plugin Configuration Key</label>
+            <helpText>The configuration key of LupaSearch UI plugin.</helpText>
+            <placeholder><![CDATA[p-xxxxxxxxxxxx]]></placeholder>
         </input-field>
 
         <input-field type="text">
